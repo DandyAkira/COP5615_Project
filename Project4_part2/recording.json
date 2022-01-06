@@ -1,0 +1,140 @@
+﻿
+
+{ msgtype = "receive"
+  user = "123"
+  message = "log in request" }
+
+{ msgtype = "send"
+  user = "123"
+  message = "new account created" }
+
+{ msgtype = "receive"
+  user = "321"
+  message = "log in request" }
+
+{ msgtype = "send"
+  user = "321"
+  message = "new account created" }
+
+{ msgtype = "receive"
+  user = "444"
+  message = "log in request" }
+
+{ msgtype = "send"
+  user = "444"
+  message = "new account created" }
+
+{ msgtype = "receive"
+  user = "444"
+  message = "log out" }
+
+{ msgtype = "receive"
+  user = "321"
+  message = "log out" }
+
+{ msgtype = "receive"
+  user = "123"
+  message = "log out" }
+
+{ msgtype = "receive"
+  user = "123"
+  message = "log in request" }
+
+{ msgtype = "send"
+  user = "123"
+  message = "log in failed" }
+
+{ msgtype = "receive"
+  user = "123"
+  message = "log in request" }
+
+{ msgtype = "send"
+  user = "123"
+  message = "log in success" }
+
+{ msgtype = "receive"
+  user = "123"
+  message =
+   "receive tweet + 
+{ Content = "hello twitter"
+  Mentions = [|"321"; "444"|]
+  Hashtags = [|"happy"|] }" }
+
+{ msgtype = "receive"
+  user = "123"
+  message = "subscribe request: 444" }
+
+{ msgtype = "send"
+  user = "123"
+  message = "subscribe success" }
+
+{ msgtype = "receive"
+  user = "321"
+  message = "log in request" }
+
+{ msgtype = "send"
+  user = "321"
+  message = "log in success" }
+
+{ msgtype = "receive"
+  user = "321"
+  message = "subscribe request: 444" }
+
+{ msgtype = "send"
+  user = "321"
+  message = "subscribe success" }
+
+{ msgtype = "receive"
+  user = "321"
+  message = "search request" }
+
+{ msgtype = "send"
+  user = "321"
+  message =
+   "search result: { Content = "hello twitter"
+  Mentions = [|"321"; "444"|]
+  Hashtags = [|"happy"|] }
+" }
+
+{ msgtype = "receive"
+  user = "321"
+  message =
+   "receive tweet + 
+{ Content = "hi bodies"
+  Mentions = [||]
+  Hashtags = [|"good"|] }" }
+
+{ msgtype = "receive"
+  user = "444"
+  message = "log in request" }
+
+{ msgtype = "send"
+  user = "444"
+  message = "log in success" }
+
+{ msgtype = "receive"
+  user = "444"
+  message =
+   "receive tweet + 
+{ Content = "wow"
+  Mentions = [||]
+  Hashtags = [||] }" }
+
+{ msgtype = "receive"
+  user = "444"
+  message = "search request" }
+
+{ msgtype = "send"
+  user = "444"
+  message =
+   "search result: { Content = "hello twitter"
+  Mentions = [|"321"; "444"|]
+  Hashtags = [|"happy"|] }
+{ Content = "hi bodies"
+  Mentions = [||]
+  Hashtags = [|"good"|] }
+{ Content = "wow"
+  Mentions = [||]
+  Hashtags = [||] }
+" }
+
